@@ -1,0 +1,25 @@
+{
+  "name": "solana-mempool-monitor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "bottleneck": "^2.19.5",
+    "express": "^4.21.2",
+    "graphql-ws": "^6.0.2",
+    "p-retry": "^6.2.1",
+    "punycode": "^2.3.1",
+    "retry": "^0.13.1",
+    "ws": "^8.18.0"
+  }
+}
