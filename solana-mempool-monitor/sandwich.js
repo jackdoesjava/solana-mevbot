@@ -21,7 +21,7 @@ const keypair = Keypair.fromSecretKey(secretKey);
 const connection = new Connection('https://api.devnet.solana.com');
 
 // Constants
-const GRAPHQL_URL = 'wss://streaming.bitquery.io/eap?token=ory_at_th-BhQzEYjeThWHSHP5ya-ATIIfyLZZIY20gX0yr2-0.RZLvAQ3t_TdRPDNvCOu8_k99-OAxmJTxWNR3ACukYtc';
+const GRAPHQL_URL = '#';
 const LARGE_TRANSACTION_THRESHOLD_USD = 50000;
 const SLIPPAGE_TOLERANCE = 0.01;
 const FIXED_TRANSACTION_FEE_SOL = 0.000005;
@@ -88,7 +88,7 @@ async function placeBuyOrder(amount, price, currency) {
         const transaction = new Transaction().add(
             SystemProgram.transfer({
                 fromPubkey: keypair.publicKey,
-                toPubkey: new PublicKey('2wwCggCbzgUMBV6PRpL49Vzo7XMUw6UnShbk1DWEWjSW'), // Replace with actual recipient address
+                toPubkey: new PublicKey('#'), // Replace with actual recipient address
                 lamports,
             })
         );
@@ -107,7 +107,7 @@ async function placeSellOrder(amount, price, currency) {
         const transaction = new Transaction().add(
             SystemProgram.transfer({
                 fromPubkey: keypair.publicKey,
-                toPubkey: new PublicKey('2wwCggCbzgUMBV6PRpL49Vzo7XMUw6UnShbk1DWEWjSW'), // Replace with actual recipient address
+                toPubkey: new PublicKey('#'), // Replace with actual recipient address
                 lamports,
             })
         );
